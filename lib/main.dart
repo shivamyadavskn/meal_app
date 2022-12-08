@@ -4,7 +4,6 @@ import 'package:meal_app/categories_screen.dart';
 void main() {
   runApp(const MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
@@ -20,8 +19,11 @@ class MyApp extends StatelessWidget {
               bodyText1: const TextStyle(
                 color: Color.fromRGBO(20, 51, 51, 1),
               ),
-              titleMedium:
-                  const TextStyle(fontFamily: 'RobotoCondensed', fontSize: 24),
+              headline1: const TextStyle(
+                fontFamily: 'Roboto',
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
               bodyText2: const TextStyle(
                 color: Color.fromRGBO(20, 51, 51, 1),
               ))),
