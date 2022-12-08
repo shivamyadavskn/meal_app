@@ -26,6 +26,9 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Text(widget.title);
+    return Scaffold(
+      appBar: AppBar(),
+      body: Text(widget.title),
+    );
   }
 }
