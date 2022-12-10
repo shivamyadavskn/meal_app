@@ -20,7 +20,7 @@ class MealDetailScreen extends StatelessWidget {
 
   Widget buildContainer(Widget child) {
     return Container(
-      height: 100,
+      height: 140,
       width: 300,
       decoration: BoxDecoration(
         color: Colors.white,
@@ -44,7 +44,7 @@ class MealDetailScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Container(
+            SizedBox(
               height: 300,
               width: double.infinity,
               child: Image.network(
@@ -58,7 +58,7 @@ class MealDetailScreen extends StatelessWidget {
                 itemCount: selectedMeal.ingredients.length,
                 itemBuilder: (ctx, index) {
                   return Card(
-                    color: Theme.of(context).secondaryHeaderColor,
+                    color: Theme.of(context).backgroundColor,
                     child: Padding(
                       padding: const EdgeInsets.symmetric(
                           vertical: 5, horizontal: 10),
